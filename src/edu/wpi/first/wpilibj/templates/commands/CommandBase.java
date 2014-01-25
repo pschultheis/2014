@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.templates.OI;
 import edu.wpi.first.wpilibj.templates.subsystems.Drive;
 import edu.wpi.first.wpilibj.templates.subsystems.ExampleSubsystem;
+import edu.wpi.first.wpilibj.templates.subsystems.VisionProcessor;
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -16,6 +17,7 @@ public abstract class CommandBase extends Command {
 
     public static OI oi;
     public static Drive drive = new Drive();
+    public static VisionProcessor visionProcessor = new VisionProcessor();
     // Create a single static instance of all of your subsystems
     public static ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 

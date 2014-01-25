@@ -4,7 +4,9 @@ package edu.wpi.first.wpilibj.templates;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.templates.commands.DriveSwitchGear;
+import edu.wpi.first.wpilibj.templates.commands.DriveSwitchToHighGear;
+import edu.wpi.first.wpilibj.templates.commands.DriveSwitchToLowGear;
+import edu.wpi.first.wpilibj.templates.commands.VisionProcessorFindHotGoal;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -12,13 +14,37 @@ import edu.wpi.first.wpilibj.templates.commands.DriveSwitchGear;
  */
 
 
-public class OI {
+ public class OI {
     Joystick xboxDriver = new Joystick(1);
-Button Driverbutton1A = new JoystickButton(xboxDriver, 1);
-     
+    
+    //Button Driverbutton1A = new JoystickButton(xboxDriver, 1); 
+        
+    Button Driverbutton2B = new JoystickButton(xboxDriver, 2);
+    
+    Button Driverbutton3X = new JoystickButton(xboxDriver, 3);
+    
+    Button Driverbutton4Y = new JoystickButton(xboxDriver, 4);
+    
+    //Button Driverbutton5LB = new JoystickButton(xboxDriver, 5);
+    
+    //Button Driverbutton6RB = new JoystickButton(xboxDriver, 6);
+    
+    //Button Driverbutton7SEL = new JoystickButton(xboxDriver, 7);
+    
+   // Button Driverbutton8STRT = new JoystickButton(xboxDriver, 8);
+    
+    //Button Driverbutton9LS = new JoystickButton(xboxDriver, 9);
+    
+    //Button Driverbutton10RS = new JoystickButton(xboxDriver, 10);
+    
+    //code = robot;
+    
      public OI()
      {
-         Driverbutton1A.whenPressed(new DriveSwitchGear());
+        
+         Driverbutton2B.whenPressed(new VisionProcessorFindHotGoal());
+         Driverbutton3X.whenPressed(new DriveSwitchToHighGear());
+         Driverbutton4Y.whenPressed(new DriveSwitchToLowGear());
      }
      
      
@@ -75,4 +101,3 @@ Button Driverbutton1A = new JoystickButton(xboxDriver, 1);
         return ((xboxDriver.getRawAxis(4))*2.0/3.0);
     }
 }
-

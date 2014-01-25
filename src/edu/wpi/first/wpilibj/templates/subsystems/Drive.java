@@ -15,29 +15,40 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 public class Drive extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-    static Solenoid leftSolenoid;
-    static Solenoid rightSolenoid;
-    boolean stateOfGear = false; //true = high gear
-                         //false = low gear
+    public static Solenoid ballShifterSolenoid;
+    
+    public boolean stateOfShifter;
+
     
     Jaguar driveLeftMotor;
     Jaguar driveRightMotor;
     
     public Drive()
     {
-        driveLeftMotor = new Jaguar(1);
-        driveRightMotor = new Jaguar(2);
-        leftSolenoid = new Solenoid(3);
-        rightSolenoid = new Solenoid(4);
+        driveLeftMotor = new Jaguar(2);
+        driveRightMotor = new Jaguar(1);
+        
+        ballShifterSolenoid = new Solenoid(3);
+        
     }
     
     //public           
     //
-   
-    public void switchGear()
+    
+    public boolean getStateOfShifter()
     {
-        leftSolenoid.set(!stateOfGear);
-        rightSolenoid.set(!stateOfGear);
+       return(ballShifterSolenoid.get());
+    }
+   
+    public void switchToHighGear()
+    {
+       ballShifterSolenoid.set(true);
+        
+    }
+    
+    public void switchToLowGear()
+    {
+        ballShifterSolenoid.set(false);
     }
 
     public void initDefaultCommand() {

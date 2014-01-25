@@ -3,6 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/commands/Auto1.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/commands/DriveStraight.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/subsystems/Harvester.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/subsystems/Drive.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/subsystems/VisionProcessor.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/commands/DriveSwitchToHighGear.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/OI.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/subsystems/ExampleSubsystem.java</file>
+            <file>file:/C:/Users/Developer/Documents/NetBeansProjects/2014RangerV00/src/edu/wpi/first/wpilibj/templates/commands/DriveSwitchToLowGear.java</file>
+        </group>
     </open-files>
 </project-private>
